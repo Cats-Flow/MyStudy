@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap");
+
+@import url(./reset.css);
+@import url(./pages.css);
+@import url(./preset.css);
+
+:root {
+  /* Color`s */
+  --color-01: #2b2b2b;
+  --color-02: #ffffff;
+  --color-03: #ececec;
+  --color-04: #868a95;
+  --color-05: #37393f;
+  --color-06: #ab3333;
+  --color-07: #a5a5a5;
+  --color-08: #319795;
+  --color-09: #3182ce;
+  --color-10: #e53e3e;
+  --color-11: #718096;
+  --color-12: #dd6b20;
+
+  /* Font's */
+  --h1: 700 1.62rem "Outfit", Arial, Sans-serif;
+  --h2: 600 1.5rem "Outfit", Arial, Sans-serif;
+  --h3: 500 1.3rem "Outfit", Arial, Sans-serif;
+  --h4: 500 1.15rem "Outfit", Arial, Sans-serif;
+  --h6: 500 1rem "Outfit", Arial, Sans-serif;
+
+  --text-primary: 400 1rem "Outfit", Arial, Sans-serif;
+  --text-detail: 400 0.9rem "Outfit", Arial, Sans-serif;
+
+  --scroll-bar-color: #868a95;
+  --scroll-bar-background: #2b2b2b;
+
+  --border: 3px solid var(--color-01);
+
+  --gap: 2rem;
+
+  --transition: all 0.5s;
+  --outline: 2px dotted var(--color-06);
+}
+
+/* Titles Presets */
+h1 {
+  font: var(--h1);
+}
+
+h2 {
+  font: var(--h2);
+}
+
+h3 {
+  font: var(--h3);
+}
+
+h4 {
+  font: var(--h4);
+}
+
+h6 {
+  font: var(--h6);
+}
+
+/* ! Scroll Bar */
+/** The CSS code you provided is responsible for styling the scroll bar in a web page. */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-background);
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scroll-bar-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-bar-color);
+  border-radius: 20px;
+  border: 4px solid var(--scroll-bar-background);
+}
+
+.nauka {
+  background: var(--color-03);
+  color: var(--color-1);
+
+  font: var(--text-primary);
+
+  -webkit-user-select: none;
+  user-select: none;
+
+  position: relative;
+}
+
+.nauka ._max {
+  height: 100vh;
+
+  display: grid;
+  align-content: space-between;
+}
+
+/* Header */
+.nauka ._header,
+.nauka ._footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 1rem;
+
+  color: var(--color-04);
+  background-color: var(--color-01);
+
+  font: var(--text-detail);
+}
+
+.nauka ._header .logo {
+  width: 7rem;
+}
+
+.nauka ._header ._desk,
+.nauka ._header ._mob .desk,
+.nauka ._header ._mob ._menu.desk {
+  display: none;
+}
+
+.nauka ._header ._desk ._btn,
+.nauka ._header ._mob ._btn {
+  position: relative;
+}
+
+.nauka ._header ._desk .css-0 {
+  inset: 80px 0 0px -85px !important;
+}
+
+.nauka ._header ._mob {
+  display: flex;
+  align-items: center;
+
+  gap: 0.3rem;
+}
+
+.nauka ._header ._mob .css-0 {
+  inset: 80px 1.6rem 0 0 !important;
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+.nauka ._header ._desk {
+  font: var(--h3);
+
+  margin: auto;
+}
+
+.nauka ._header ._desk ._menu .btn {
+  position: relative;
+}
+
+.nauka ._header ._desk ._menu .btn span {
+  display: flex;
+  align-items: center;
+
+  gap: 0.3rem;
+}
+
+.nauka ._header ._desk ._menu a {
+  color: var(--color-01);
+}
+
+.nauka ._header ._mob ._menu .list .mi {
+  color: var(--color-01);
+  font: var(--h4);
+}
+
+.nauka ._header ._desk a:hover,
+.nauka ._header ._desk ._menu .btn:hover,
+.nauka ._header ._mob ._menu .list .mi:hover {
+  transition: var(--transition);
+
+  color: var(--color-02);
+}
+
+.nauka ._header ._desk a:focus-visible,
+.nauka ._header ._desk ._menu .btn:focus-visible,
+.nauka ._header ._mob ._menu .list .mi:focus-visible {
+  color: var(--color-02);
+
+  outline: var(--outline);
+}
+
+.nauka ._footer span {
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+}
+
+/* Main */
+.nauka ._main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: var(--gap);
+
+  padding: 3rem 0.5rem;
+}
+
+@media screen and (min-width: 425px) {
+  /* Header */
+  .nauka ._header,
+  .nauka ._footer {
+    padding: 1rem 1.6rem;
+  }
+
+  /* Main */
+  .nauka ._main {
+    padding: 3rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /* Header */
+  .nauka ._header ._desk {
+    display: flex;
+    align-items: center;
+
+    gap: 1.5rem;
+  }
+
+  .nauka ._header ._mob ._menu .mi.mob {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Header */
+  .nauka ._header .logo {
+    width: 9rem;
+  }
+
+  .nauka ._header ._mob .desk,
+  .nauka ._header ._mob ._menu.desk {
+    display: block;
+  }
+
+  .nauka ._header ._mob ._menu.mob {
+    display: none;
+  }
+}

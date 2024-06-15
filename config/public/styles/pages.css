@@ -1,0 +1,119 @@
+/* Home */
+.nauka ._home {
+  display: grid;
+  place-content: center;
+
+  height: 100vh;
+
+  background-color: var(--color-01);
+
+  padding: 1.5rem;
+}
+
+.nauka ._home .logo {
+  width: 45rem;
+}
+
+/* Register */
+.nauka ._register ._terms-accept {
+  font: var(--text-detail);
+
+  display: flex;
+  justify-content: center;
+}
+
+.nauka ._register ._terms-accept a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.nauka ._register ._terms-accept a:hover {
+  transition: var(--transition);
+
+  color: var(--color-06);
+}
+
+/* Dash */
+.nauka ._board ._column.p1,
+.nauka ._board ._calendar {
+  display: none;
+}
+
+.nauka ._board ._profile .photo {
+  background-color: var(--color-03);
+
+  border: var(--border);
+  border-radius: 8px;
+
+  display: grid;
+  place-content: center;
+
+  padding: 0.8rem;
+
+  width: fit-content;
+  width: -moz-fit-content;
+
+  margin: auto;
+}
+
+.nauka ._board ._profile .photo .ico {
+  font-size: 3rem;
+}
+
+/* Events */
+.nauka ._events {
+  align-items: center;
+
+  color: var(--color-07);
+
+  font-size: 1.2rem;
+  font-weight: 5008;
+}
+
+.nauka ._events .ico {
+  font-size: 5rem;
+}
+
+/* Curso - Home */
+.nauka ._curso ._column.p2 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+@media screen and (min-width: 768px) {
+  .nauka ._board ._main {
+    flex-direction: row;
+    align-items: start;
+  }
+
+  .nauka ._board ._column.p1,
+  .nauka ._board ._column.p2 {
+    max-width: 20rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* Dash */
+  .nauka ._board ._column.p1,
+  .nauka ._board ._calendar {
+    display: grid;
+  }
+
+  /* Curso - Home */
+  .nauka ._curso ._column.p2 {
+    flex-direction: column;
+  }
+
+  .nauka ._curso ._column.p5 ._group.p1,
+  .nauka ._curso ._column.p5 ._group.p2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Curso - Home */
+  .nauka ._curso ._column.p5 ._group.p1,
+  .nauka ._curso ._column.p5 ._group.p2 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

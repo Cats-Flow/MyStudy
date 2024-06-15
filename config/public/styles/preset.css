@@ -1,0 +1,553 @@
+/* Outher */
+.nauka .ico {
+  font-size: 1.5rem;
+}
+
+.nauka ._block {
+  background-color: var(--color-02);
+
+  border: var(--border);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+
+  text-align: center;
+
+  padding: 0.8rem 1.5rem;
+  font-size: 1.2rem;
+}
+
+.nauka ._column {
+  display: grid;
+  gap: var(--gap);
+
+  width: 100% !important;
+}
+
+/* Tag's */
+.nauka ._tag {
+  padding: 0.3rem 0.8rem;
+  border-radius: 5rem;
+
+  width: fit-content;
+  width: -moz-fit-content;
+
+  display: inline-block;
+
+  color: var(--color-02);
+}
+
+.nauka ._tag.sm {
+  font-size: 0.75rem;
+}
+
+.nauka ._tag.md {
+  font-size: 1rem;
+}
+
+.nauka ._tag.lg {
+  font-size: 1.25rem;
+}
+
+.nauka ._tag.c1 {
+  background: var(--color-08);
+}
+
+.nauka ._tag.c2 {
+  background: var(--color-09);
+}
+
+.nauka ._tag.c3 {
+  background: var(--color-10);
+}
+
+.nauka ._tag.c4 {
+  background: var(--color-11);
+}
+
+.nauka ._tag.c5 {
+  background: var(--color-12);
+}
+
+/* Masonry */
+.nauka ._masonry {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+
+  gap: var(--gap);
+}
+
+/* Calendar */
+.nauka ._calendar {
+  width: auto;
+
+  border-color: var(--color-01);
+  border-radius: 8px;
+}
+
+.nauka ._calendar .react-calendar__navigation__prev2-button,
+.nauka ._calendar .react-calendar__navigation__next2-button {
+  display: none;
+}
+
+.nauka ._calendar .react-calendar__navigation__prev-button,
+.nauka ._calendar .react-calendar__navigation__next-button,
+.nauka ._calendar .react-calendar__navigation__label {
+  margin: 0.2rem;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+}
+
+.nauka ._calendar .react-calendar__navigation__prev-button:hover,
+.nauka ._calendar .react-calendar__navigation__next-button:hover,
+.nauka ._calendar .react-calendar__navigation__label:hover,
+.nauka ._calendar .react-calendar button:enabled:hover {
+  transition: var(--transition);
+  background-color: var(--color-05);
+
+  color: var(--color-03);
+}
+
+.nauka ._calendar .react-calendar__month-view__weekdays__weekday abbr {
+  text-decoration: none;
+}
+
+.nauka ._calendar .react-calendar__month-view__days__day {
+  border-radius: 8px;
+}
+
+.nauka
+  ._calendar
+  .react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day {
+  background-color: var(--color-04);
+
+  color: var(--color-02);
+}
+
+.nauka ._calendar .react-calendar__tile--now {
+  background-color: var(--color-03);
+  color: var(--color-01);
+}
+
+/* Card's */
+.nauka ._card {
+  background-color: var(--color-02);
+
+  border: var(--border);
+  border-radius: 8px;
+
+  padding: 1.5rem 1rem;
+  margin: 22px 6px 3px 0;
+  gap: 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+.nauka ._card.w01 {
+  width: 25rem;
+}
+
+.nauka ._card.alert {
+  flex-direction: row;
+  align-items: center;
+}
+
+.nauka ._card ._fav {
+  background-color: var(--color-02);
+
+  border: var(--border);
+  border-radius: 8px;
+
+  width: 3.12rem;
+  height: 3.12rem;
+
+  display: grid;
+  place-content: center;
+
+  position: absolute;
+  top: -25px;
+  right: 1rem;
+}
+
+.nauka ._card ._fav.rd {
+  width: 2.5rem;
+  height: 2.5rem;
+
+  font-size: 1rem;
+}
+
+.nauka ._card .center {
+  text-align: center;
+}
+
+.nauka ._card::after {
+  background-color: var(--color-01);
+  border-radius: 8px;
+
+  content: "";
+
+  display: block;
+
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  transform: translate(8px, 8px);
+  transition: transform 0.2s ease-out;
+
+  z-index: -1;
+}
+
+.nauka ._card.a:hover {
+  transition: var(--transition);
+  border: 3px solid var(--color-06);
+
+  box-shadow: 0px 10px 35px -10px var(--color-01);
+}
+
+.nauka ._card.a:hover ._fav {
+  transition: var(--transition);
+  border: 3px solid var(--color-06);
+}
+
+.nauka ._card.a:hover::after {
+  transition: var(--transition);
+  background-color: var(--color-06);
+}
+
+.nauka ._card.a:focus-visible {
+  border: 3px solid var(--color-06);
+
+  box-shadow: 0px 10px 35px -10px var(--color-01);
+
+  outline: var(--outline);
+}
+
+.nauka ._card.a:focus-visible ._fav {
+  border: 3px solid var(--color-06);
+}
+
+.nauka ._card.a:focus-visible::after {
+  background-color: var(--color-06);
+}
+
+/* Button's */
+.nauka ._btn {
+  background-color: var(--color-02);
+
+  border: var(--border);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  padding: 0.8rem;
+  width: 100%;
+
+  font-size: 1rem;
+
+  cursor: pointer;
+}
+
+.nauka ._btn.pass {
+  display: grid;
+  place-content: center;
+
+  width: auto;
+
+  font-size: 1rem;
+}
+
+.nauka ._btn.head {
+  background: transparent;
+  border: 2px solid var(--color-04);
+
+  padding: 0.6rem;
+
+  font-size: 1.2rem;
+}
+
+.nauka ._btn.head:hover {
+  transition: var(--transition);
+
+  background: var(--color-04);
+  color: var(--color-02);
+}
+
+.nauka ._btn.head:focus-visible {
+  background: var(--color-04);
+  color: var(--color-02);
+
+  outline: var(--outline);
+}
+
+.nauka ._btn.min {
+  padding: 0.8rem;
+
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.nauka ._btn.rd {
+  width: fit-content;
+  width: -moz-fit-content;
+}
+
+.nauka ._btn.center {
+  justify-content: center;
+}
+
+.nauka ._btn.active {
+  background-color: var(--color-01);
+  color: var(--color-03);
+
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.nauka ._btn.active:hover {
+  transition: var(--transition) !important;
+  background-color: var(--color-02);
+
+  color: var(--color-01);
+}
+
+.nauka ._btn:hover {
+  transition: var(--transition);
+  background-color: var(--color-01);
+
+  color: var(--color-03);
+}
+
+.nauka ._btn:focus-visible {
+  transition: var(--transition);
+
+  outline: var(--outline);
+  background-color: var(--color-01);
+
+  color: var(--color-03);
+}
+
+/* Container's */
+.nauka ._div,
+.nauka ._nav,
+.nauka ._list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.nauka ._line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nauka ._cnt {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+
+  gap: 0.3rem;
+}
+
+.nauka ._row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+}
+
+.nauka ._list {
+  list-style-position: inside;
+  list-style-type: disc;
+}
+
+.nauka ._group {
+  display: grid;
+
+  gap: 1.5rem;
+}
+
+/* Form's */
+.nauka ._input,
+.nauka ._select,
+.nauka ._textarea {
+  border: var(--border);
+  border-radius: 0.5rem;
+
+  height: 55.59px;
+
+  padding: 0.8rem;
+
+  width: 100%;
+}
+
+.nauka ._input::placeholder,
+.nauka ._textarea::placeholder {
+  color: var(--color-04);
+}
+
+.nauka ._textarea {
+  height: 5rem;
+  resize: none;
+}
+
+.nauka ._select {
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+
+  cursor: pointer;
+}
+
+.nauka ._select .camp {
+  background-color: transparent;
+
+  padding: 0.8rem;
+
+  width: 100%;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  cursor: pointer;
+}
+
+.nauka ._select .css-162mkon {
+  position: absolute;
+  right: 0.8rem;
+  top: 50%;
+
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  font-size: 1.5rem;
+
+  cursor: pointer;
+}
+
+.nauka ._input:hover,
+.nauka ._textarea:hover,
+.nauka ._select:hover {
+  transition: var(--transition) !important;
+  border: 3px solid var(--color-06) !important;
+}
+
+.nauka ._input:focus-visible,
+.nauka ._textarea:focus-visible,
+.nauka ._select:focus-visible {
+  border: 2px solid var(--color-06) !important;
+  outline: var(--outline) !important;
+}
+
+/* Card`s - Calendar */
+.nauka ._logi {
+  background-color: var(--color-03);
+
+  border: var(--border);
+  border-radius: 8px;
+
+  padding: 0.8rem;
+  gap: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.nauka ._logi .title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.nauka ._logi ._link {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.nauka ._logi:hover {
+  transition: var(--transition);
+  border: 3px solid var(--color-06);
+}
+
+.nauka ._logi:focus-visible {
+  border: 3px solid var(--color-06);
+  outline: var(--outline);
+}
+
+/* Menu */
+.nauka ._menu .list {
+  background-color: var(--color-02);
+  border: var(--border);
+
+  border-radius: 8px;
+}
+
+.nauka ._menu .list .mi {
+  padding: 0.8rem;
+
+  border-bottom: var(--border);
+}
+
+.nauka ._menu .list .mi:last-child {
+  border-bottom: none;
+}
+
+.nauka ._menu .list .mi:hover {
+  transition: var(--transition);
+  background-color: var(--color-01);
+  color: var(--color-03);
+}
+
+.nauka ._menu .list .mi:focus-visible {
+  outline: var(--outline);
+
+  background-color: var(--color-01);
+  color: var(--color-03);
+}
+
+@media screen and (min-width: 768px) {
+  /* Container's */
+  .nauka ._nav {
+    flex-direction: row;
+  }
+
+  /* Masonry */
+  .nauka ._masonry {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* Container's */
+  .nauka ._group {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Card's */
+  .nauka ._card.title {
+    max-width: 24rem;
+    width: 100%;
+  }
+}
