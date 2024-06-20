@@ -8,15 +8,21 @@ import { GitCommit, CaretLeft, CaretRight } from "@phosphor-icons/react";
 export function Logs() {
   const breach = [
     {
+      title: "<!-- B1.0.1 -->",
+      item: [
+        "Lógica para retornar página.",
+      ]
+    },
+    {
       title: "<!-- B1.0.0 -->",
       item: [
-        "Estrotura do Header criada.",
+        "Estrutura do Header criada.",
         "Página dos cursos criada.",
         "Página do painel inicial criada.",
         "Página de novidade criada.",
         "Página inicial criada.",
         "Página de login, criar conta e alterar senha criadas.",
-        "Estrotura de pastas do projeto."
+        "Estrutura de pastas do projeto."
       ]
     },
   ];

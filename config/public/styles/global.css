@@ -20,7 +20,7 @@
   --color-12: #dd6b20;
 
   /* Font's */
-  --h1: 700 1.62rem "Outfit", Arial, Sans-serif;
+  --h1: 700 1.7rem "Outfit", Arial, Sans-serif;
   --h2: 600 1.5rem "Outfit", Arial, Sans-serif;
   --h3: 500 1.3rem "Outfit", Arial, Sans-serif;
   --h4: 500 1.15rem "Outfit", Arial, Sans-serif;
@@ -205,7 +205,7 @@ h6 {
 
   gap: var(--gap);
 
-  padding: 3rem 0.5rem;
+  padding: 3rem 0.8rem;
 }
 
 @media screen and (min-width: 425px) {

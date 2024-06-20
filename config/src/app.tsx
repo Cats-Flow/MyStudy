@@ -10,6 +10,9 @@ import { Register } from "./pages/auth/register";
 import { Logs } from "./pages/novidades";
 import { Dash } from "./pages/dash";
 import { Curso } from "./pages/curso/home";
+import { Notas } from "./pages/notas/home";
+import { NotasView } from "./pages/notas/view";
+import { NotasCreate } from "./pages/notas/create";
 
 export function App() {
   return (
@@ -24,6 +27,10 @@ export function App() {
 
         <Route path="/dash/" element={<Dash />} />
         <Route path="/curso/" element={<Curso />} />
+
+        <Route path="/notas/" element={<Notas />} />
+        <Route path="/notas/view" element={<NotasView />} />
+        <Route path="/notas/create" element={<NotasCreate />} />
 
         <Route path="/auth/login" element={<Login />} />
         <Route path="/auth/register" element={<Register />} />

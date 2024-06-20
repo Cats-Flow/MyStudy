@@ -11,10 +11,10 @@ export function Dash() {
   return (
     <section className="_body _dash _board">
       <Helmet>
-        <title>Painel inicial | Nauka</title>
-        <meta name="title" content="Painel inicial | Nauka" />
+
       </Helmet>
-      <Header />
+      <Header />        <title>Painel inicial | Nauka</title>
+        <meta name="title" content="Painel inicial | Nauka" />
       <main className="_main">
         <ActiviesColumn />
         <section className="_column p3">
@@ -36,7 +36,7 @@ export function Dash() {
           </section>
           <CardTitle type="anotacoes" />
           <section className="_group p2">
-            <a title="Nota sobre Gerenciamento multi-mídia e social" href="/notas/?AT-1358259NK" className="_card _note a">
+            <a title="Nota sobre Gerenciamento multi-mídia e social" href="/notas/view?AT-1358259NK" className="_card _note a">
               <div className="_fav">
                 <Pen className="ico" />
               </div>

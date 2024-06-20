@@ -23,19 +23,19 @@ export function Favorite() {
       </div>
       <h2>Acesso rápido</h2>
       <nav className="_div">
-        <a className="_btn" href="/calendario" title="Calendário">
+        <a className="_btn" href="/calendario/" title="Calendário">
           <CalendarDots className="ico" />
           Calendário
         </a>
-        <a className="_btn" href="/registrar/curso" title="Registrar novo curso">
+        <a className="_btn" href="/curso/registrar" title="Registrar novo curso">
           <Student className="ico" />
           Registrar curso
         </a>
-        <a className="_btn" href="/registrar/materia" title="Registrar nova matéria">
+        <a className="_btn" href="/curso/materia/registrar" title="Registrar nova matéria">
           <BookBookmark className="ico" />
           Registrar matéria
         </a>
-        <a className="_btn" href="/calendar?activies-today" title="Atividades de hoje">
+        <a className="_btn" href="/calendario/?activies-today" title="Atividades de hoje">
           <NewspaperClipping className="ico" />
           Atividades de hoje
         </a>
