@@ -304,7 +304,6 @@ video {
 .nauka .css-0 {
   transform: none !important;
   margin: auto !important;
-  visibility: inherit !important;
   --popper-transform-origin: auto !important;
   width: fit-content;
   position: absolute !important;

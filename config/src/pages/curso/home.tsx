@@ -36,7 +36,7 @@ export function Curso() {
             <h2>Filtros</h2>
             <div className="_div">
               <label className="_select" htmlFor="semestre">
-                <Select className="camp">
+                <Select className="camp" id="semestre">
                   <option value="">Semestres</option>
                   <option value="primeiro-semestre">1º Semestre</option>
                   <option value="segundo-semestre">2º Semestre</option>
@@ -49,7 +49,7 @@ export function Curso() {
                 </Select>
               </label>
               <label className="_select" htmlFor="status">
-                <Select className="camp">
+                <Select className="camp" id="status">
                   <option value="">Status</option>
                   <option value="concuido">Concluido</option>
                   <option value="em-andamento">Em andamento</option>
@@ -84,6 +84,10 @@ export function Curso() {
               <a className="_btn" title="Calendário Acadêmico da Graduaçaõ em Jornalismo na Universidade Anhanguera" href="#" target="_blank" rel="noopener noreferrer">
                 <CalendarDots className="ico" />
                 Calendário Acadêmico
+              </a>
+              <a className="_btn" title="Calendário Acadêmico da Graduaçaõ em Jornalismo na Universidade Anhanguera" href="#" target="_blank" rel="noopener noreferrer">
+                <CalendarDots className="ico" />
+                Gerenciar curso
               </a>
             </nav>
             <button className="_btn active center" title="Gerenciar ferramentas">Gerenciar</button>
