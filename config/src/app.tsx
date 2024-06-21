@@ -13,6 +13,7 @@ import { Curso } from "./pages/curso/home";
 import { Notas } from "./pages/notas/home";
 import { NotasView } from "./pages/notas/view";
 import { NotasCreate } from "./pages/notas/create";
+import { CursoRegister } from "./pages/curso/registrar";
 
 export function App() {
   return (
@@ -26,7 +27,9 @@ export function App() {
         <Route path="/novidades" element={<Logs />} />
 
         <Route path="/dash/" element={<Dash />} />
+
         <Route path="/curso/" element={<Curso />} />
+        <Route path="/curso/register" element={<CursoRegister />} />
 
         <Route path="/notas/" element={<Notas />} />
         <Route path="/notas/view" element={<NotasView />} />

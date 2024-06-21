@@ -10,6 +10,9 @@ export function Logs() {
     {
       title: "<!-- B1.0.1 -->",
       item: [
+        "Melhorias no Header e Dash.",
+        "Criação da página de visualização da nota, criação e home.",
+        "Melhorias na estilização.",
         "Lógica para retornar página.",
       ]
     },
