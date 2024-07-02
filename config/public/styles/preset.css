@@ -133,9 +133,7 @@
   border-radius: 8px;
 }
 
-.nauka
-  ._calendar
-  .react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day {
+.nauka ._calendar .react-calendar__tile--active.react-calendar__tile--range.react-calendar__tile--rangeStart.react-calendar__tile--rangeEnd.react-calendar__tile--rangeBothEnds.react-calendar__month-view__days__day {
   background-color: var(--color-04);
 
   color: var(--color-02);
@@ -321,6 +319,10 @@
 .nauka ._btn.rd {
   width: fit-content;
   width: -moz-fit-content;
+}
+
+.nauka ._btn.md {
+  width: 100%;
 }
 
 .nauka ._btn.center {
@@ -621,6 +623,7 @@
 }
 
 @media screen and (min-width: 768px) {
+
   /* Container's */
   .nauka ._nav {
     flex-direction: row;
@@ -640,9 +643,15 @@
   .nauka ._card.w01 {
     width: 25rem;
   }
+
+  /* Button */
+  .nauka ._btn.md {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+
   /* Mark - Text Editor */
   .nauka ._mark .DraftEditor-root {
     max-height: 739px;
@@ -650,6 +659,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+
   /* Container's */
   .nauka ._group {
     grid-template-columns: repeat(2, 1fr);

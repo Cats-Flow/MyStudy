@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 import { Footer, Header } from "../content/layout";
-import {  GraduationCap, Pen } from "@phosphor-icons/react";
+import { GraduationCap, Pen } from "@phosphor-icons/react";
 
 import CardTitle from "../content/titlecard";
 import { ActiviesColumn } from "../content/activities";
@@ -11,10 +11,10 @@ export function Dash() {
   return (
     <section className="_body _dash _board">
       <Helmet>
-
-      </Helmet>
-      <Header />        <title>Painel inicial | Nauka</title>
+        <title>Painel inicial | Nauka</title>
         <meta name="title" content="Painel inicial | Nauka" />
+      </Helmet>
+      <Header />
       <main className="_main">
         <ActiviesColumn />
         <section className="_column p3">

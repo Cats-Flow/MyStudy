@@ -96,6 +96,20 @@
   margin-top: 1.5rem;
 }
 
+/* Curso - Register */
+.nauka ._cr ._main {
+  justify-content: center;
+}
+
+.nauka ._cr ._column.p5 {
+  width: fit-content !important;
+  width: -moz-fit-content !important;
+}
+
+.nauka ._cr ._column.p5 ._card {
+  max-width: 45rem;
+}
+
 @media screen and (min-width: 768px) {
   .nauka ._board ._main {
     flex-direction: row;
@@ -111,9 +125,15 @@
   .nauka ._notacreate ._card._mk {
     max-width: 50vw;
   }
+
+  /* Curso - Register */
+  .nauka ._cr ._column.p5 ._card {
+    width: 35rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+
   /* Dash */
   .nauka ._board ._column.p1,
   .nauka ._board ._calendar {
@@ -137,6 +157,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+
   /* Curso - Home */
   .nauka ._curso ._column.p5 ._group.p1,
   .nauka ._curso ._column.p5 ._group.p2 {
